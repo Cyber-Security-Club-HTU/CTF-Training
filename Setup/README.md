@@ -1,4 +1,6 @@
-![image](https://github.com/Cyber-Security-Club-HTU/CTF-Training/assets/75253629/168e55c5-937d-4d2c-af62-be413d6702cd)
+<p align="center">
+  <img src="https://github.com/Cyber-Security-Club-HTU/CTF-Training/assets/75253629/168e55c5-937d-4d2c-af62-be413d6702cd">
+</p>
 
 # Getting Started
 
