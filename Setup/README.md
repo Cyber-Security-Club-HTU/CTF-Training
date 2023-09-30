@@ -2,10 +2,10 @@
 
 **Kali Linux is a popular choice for cybersecurity professionals, enthusiasts, and those participating in Capture The Flag (CTF) competitions for several reasons:**
 
-- **Penetration Testing Tools:** Kali Linux is specifically designed for penetration testing and ethical hacking. It comes pre-installed with hundreds of tools that are helpful for various tasks in CTFs, such as nmap, gdb, Metasploit, John the Ripper, Hydra, Wireshark, and many more.
-- **Regularly Updated:** Kali Linux is updated regularly with new tools, patches, and fixes. This ensures that the user always has the latest tools and vulnerabilities at their disposal.
-- **Scripting & Automation:** With Kali being based on Debian, it supports all the scripting and automation capabilities of a typical Linux distribution. 
-- **Customizable:** Advanced users can customize Kali to their specific needs, adding or removing tools, and tweaking it as required.
+- ***Penetration Testing Tools:*** Kali Linux is specifically designed for penetration testing and ethical hacking. It comes pre-installed with hundreds of tools that are helpful for various tasks in CTFs, such as nmap, gdb, Metasploit, John the Ripper, Hydra, Wireshark, and many more.
+- ***Regularly Updated:*** Kali Linux is updated regularly with new tools, patches, and fixes. This ensures that the user always has the latest tools and vulnerabilities at their disposal.
+- ***Scripting & Automation:*** With Kali being based on Debian, it supports all the scripting and automation capabilities of a typical Linux distribution. 
+- ***Customizable:*** Advanced users can customize Kali to their specific needs, adding or removing tools, and tweaking it as required.
 
 ## Why use Kali ?
 Kali is a distribution of Linux built by hackers for hackers. This doesn't mean that you cannot use any other operating system. 
