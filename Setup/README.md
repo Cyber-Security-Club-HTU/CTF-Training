@@ -41,6 +41,7 @@ That's really it, for the rest of this tutorial we will demonstrate installing k
 - After you installed it, you will see a file named "kali-linux-2023.3-virtualbox-amd64.7z", you can download [7zip](https://www.7-zip.org/a/7z2301-x64.exe) and extract it as shown below.
 
 ![image](https://github.com/Cyber-Security-Club-HTU/CTF-Training/assets/75253629/4989872d-d2d1-48a2-96ea-6c70d1b3eabf)
+
 ![image](https://github.com/Cyber-Security-Club-HTU/CTF-Training/assets/75253629/c55428d4-8dc4-470e-b9e8-af32209ea52d)
 
 
