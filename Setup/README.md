@@ -49,12 +49,11 @@ That's really it, for the rest of this tutorial we will demonstrate installing k
 
 ![image](https://github.com/Cyber-Security-Club-HTU/CTF-Training/assets/75253629/c180a262-ce55-4dd0-ad8f-abeb021d261b)
 
-
 - The virtualbox will open up and will show the machine in a powered off state.
 
 ![image](https://github.com/Cyber-Security-Club-HTU/CTF-Training/assets/75253629/b28c2260-1981-4ee9-a0ae-bb733f15db83)
 
-Double click on the machine and voila, here is your kali machine up and running.
+- Double click on the machine or press start and voila here is your kali machine up and running.
 
 **Login Default Credentials:**
 
