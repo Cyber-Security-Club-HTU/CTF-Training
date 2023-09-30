@@ -62,5 +62,5 @@ USERNAME: kali
 PASSWORD: kali
 ```
 
-Finally, dont forget to run `sudo apt update` after you open your machine to make sure everything is up to date.
+- Finally, dont forget to run `sudo apt update` after you open your machine to make sure everything is up to date.
 
