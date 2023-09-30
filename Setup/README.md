@@ -26,4 +26,4 @@ The biggest names in VM's are VirtualBox, and VMWare. They both provide free sol
 - Download the correct version for your operating system.
 - Install.
   
-That's really it, for the rest of this tutorial we will demonstrate installing kali on virtualbox.
+That's really it, for the rest of this tutorial we will demonstrate installing kali on virtualbox (https://www.virtualbox.org/).
