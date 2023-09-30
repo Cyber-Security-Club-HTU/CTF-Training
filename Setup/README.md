@@ -1,3 +1,5 @@
+![image](https://github.com/Cyber-Security-Club-HTU/CTF-Training/assets/75253629/50f84640-418c-4cee-a25a-6b3f2e4d665a)
+
 # Getting Started
 
 **Kali Linux is a popular choice for cybersecurity professionals, enthusiasts, and those participating in Capture The Flag (CTF) competitions for several reasons:**
