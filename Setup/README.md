@@ -31,3 +31,36 @@ The biggest names in VM's are VirtualBox, and VMWare. They both provide free sol
 - Install.
   
 That's really it, for the rest of this tutorial we will demonstrate installing kali on virtualbox (https://www.virtualbox.org/).
+
+## Installing & Setting Up Kali
+
+- First thing, press to install the [windows version of kali](https://cdimage.kali.org/kali-2023.3/kali-linux-2023.3-virtualbox-amd64.7z ) or the [mac (apple silicon) version of kali](https://cdimage.kali.org/kali-2023.3/kali-linux-2023.3-installer-arm64.iso) if you are on a macbook.
+
+- We will proceed with the windows version, if you have a mac you can proceed with this [tutorial](https://www.youtube.com/watch?v=9zdjQ9w_v_4).
+
+- After you installed it, you will see a file named "kali-linux-2023.3-virtualbox-amd64.7z", you can download [7zip](https://www.7-zip.org/a/7z2301-x64.exe) and extract it as shown below.
+
+![image](https://github.com/Cyber-Security-Club-HTU/CTF-Training/assets/75253629/4989872d-d2d1-48a2-96ea-6c70d1b3eabf)
+![image](https://github.com/Cyber-Security-Club-HTU/CTF-Training/assets/75253629/c55428d4-8dc4-470e-b9e8-af32209ea52d)
+
+
+- After that you will see these 2 files inside the extracted folder, then press on the blue file (.vbox).
+
+![image](https://github.com/Cyber-Security-Club-HTU/CTF-Training/assets/75253629/c180a262-ce55-4dd0-ad8f-abeb021d261b)
+
+
+- The virtualbox will open up and will show the machine in a powered off state.
+
+![image](https://github.com/Cyber-Security-Club-HTU/CTF-Training/assets/75253629/b28c2260-1981-4ee9-a0ae-bb733f15db83)
+
+Double click on the machine and voila, here is your kali machine up and running.
+
+**Login Default Credentials:**
+
+```
+USERNAME: kali
+PASSWORD: kali
+```
+
+Finally, dont forget to run `sudo apt update` after you open your machine to make sure everything is up to date.
+
