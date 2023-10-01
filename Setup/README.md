@@ -45,7 +45,7 @@ That's really it, for the rest of this tutorial we will demonstrate installing k
 ![image](https://github.com/Cyber-Security-Club-HTU/CTF-Training/assets/75253629/c55428d4-8dc4-470e-b9e8-af32209ea52d)
 
 
-- After that you will see these 2 files inside the extracted folder, then press on the blue file (.vbox).
+- After that you will see these 2 files inside the extracted folder, double click on the blue file (.vbox).
 
 ![image](https://github.com/Cyber-Security-Club-HTU/CTF-Training/assets/75253629/c180a262-ce55-4dd0-ad8f-abeb021d261b)
 
