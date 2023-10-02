@@ -193,7 +193,6 @@ dd if=file.bin of=newfile.bin bs=1 skip=10
 - Familiarize yourself with bash scripting for automation.
 
 ## Common Questions & Answers
-## Common Questions & Answers
 
 - **Q**: **What if we can't solve a challenge?**  
 **A**: Don't get discouraged! Post-CTF write-ups can provide insights. It's all part of the learning process.
