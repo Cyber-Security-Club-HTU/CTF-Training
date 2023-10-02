@@ -63,6 +63,7 @@ Python is often the go-to language for CTF enthusiasts due to its simplicity and
 - Crafting exploits
 - Working with binaries
 - Networking tasks
+- 
 Example:
 ```python
 from pwn import *
@@ -72,6 +73,7 @@ r.sendline('Hello CTF!')
 
 **binascii:**
 - Convert between binary and ASCII.
+  
 Examples:
 ```python
 binascii.hexlify('hello')
@@ -80,6 +82,7 @@ binascii.unhexlify('68656c6c6f')
 
 **PyCrypto:**
 - Cryptographic operations like encryption, decryption, and hashing.
+  
 Example:
 ```python
 from Crypto.Cipher import AES
@@ -89,6 +92,7 @@ message = obj.encrypt('Hello CTF!')
 
 **requests:**
 - Make web requests.
+  
 Example:
 ```python
 import requests
@@ -116,11 +120,13 @@ A strong understanding of the Linux command line is imperative for tackling CTF 
 ### Searching:
 
 `grep`: Search for text patterns within files.
+
 Example: 
 ```
 grep "flag" file.txt
 ```
 `find`: Find files or directories.
+
 Example: 
 ```
 find / -name secretfile.txt
@@ -129,11 +135,13 @@ find / -name secretfile.txt
 ### Networking:
 
 `nc (netcat)`: Networking utility.
+
 Example:
 ```
 nc ctf.example.com 1234
 ```
 `nmap`: Network scanning tool.
+
 Example: 
 ```
 nmap -sV ctf.example.com
@@ -142,22 +150,26 @@ nmap -sV ctf.example.com
 ### Binary & Data Analysis:
 
 `hexdump`: Display file in hexadecimal.
+
 Example:
 ```
 hexdump -C file.bin
 ```
 
 `strings`: Extract strings from binaries.
+
 Example:
 ```
 strings file.bin
 ```
 `binwalk`: Binary file analysis tool.
+
 Example:
 ```
 binwalk file.bin
 ```
 `dd`: Convert and copy files.
+
 Example: 
 ```
 dd if=file.bin of=newfile.bin bs=1 skip=10
