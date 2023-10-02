@@ -1,6 +1,7 @@
 <div align="center">
 <img src="https://github.com/Cyber-Security-Club-HTU/CTF-Training/assets/75253629/235393be-0c20-4c77-b178-5850cc7f5dc0">
 </div>
+
 ## Table of Contents
 [What is a CTF?](#what-is-a-ctf-?)
 Jeopardy-style CTF
