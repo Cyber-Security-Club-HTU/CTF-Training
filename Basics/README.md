@@ -219,7 +219,8 @@ dd if=file.bin of=newfile.bin bs=1 skip=10
 - **Q**: **How important is it to understand networking for CTFs?**  
 **A**: Networking knowledge is beneficial, especially for challenges that revolve around network analysis, protocols, or network vulnerabilities.
 
-- **Q**: **Can participating in CTFs help with a cybersecurity career?**  
+- **Q**: **Can participating in CTFs help with a cybersecurity career?**
+  
 **A**: Definitely! Many cybersecurity professionals and enthusiasts started their journey with CTFs. They're a great way to learn, showcase your skills, and even get noticed by potential employers.
 
 ```
