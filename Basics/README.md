@@ -9,8 +9,8 @@
 - [Team Strategy & Roles](#team-strategy-&-roles)
 - [Python for CTF](#python-for-ctf)
 - [Linux Commands for CTF](#linux-commands-for-ctf)
-- [Tips & Tricks](#tips-&-tricks)
-- [Common Questions & Answers](#common-questions-&-answers)
+[Tips & Tricks](#tips-&-tricks)
+[Common Questions & Answers](#common-questions-&-answers)
 
 ## What is a CTF?
 **CTF, or Capture The Flag, is a type of computer security competition where participants solve challenges across various categories to find flags and earn points.**
