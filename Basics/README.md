@@ -1,3 +1,6 @@
+<div align="center">
+<img src="https://github.com/Cyber-Security-Club-HTU/CTF-Training/assets/75253629/235393be-0c20-4c77-b178-5850cc7f5dc0">
+</div>
 ## Table of Contents
 [What is a CTF?](#what-is-a-ctf-?)
 Jeopardy-style CTF
@@ -42,9 +45,8 @@ Python is often the go-to language for CTF enthusiasts due to its simplicity and
 - Vibrant Ecosystem: Many third-party libraries developed specifically for hacking and CTF tasks.
   
 ### Essential Python Libraries:
-```
-pwntools:
-```
+
+**pwntools:**
 - Crafting exploits
 - Working with binaries
 - Networking tasks
@@ -55,18 +57,15 @@ r = remote('ctf.example.com', 1234)
 r.sendline('Hello CTF!')
 ```
 
-```
-binascii:
-```
+**binascii:**
 - Convert between binary and ASCII.
 Examples:
 ```python
 binascii.hexlify('hello')
 binascii.unhexlify('68656c6c6f')
 ```
-```
-PyCrypto:
-```
+
+**PyCrypto:**
 - Cryptographic operations like encryption, decryption, and hashing.
 Example:
 ```python
@@ -74,9 +73,8 @@ from Crypto.Cipher import AES
 obj = AES.new('This is a key123', AES.MODE_CBC, 'This is an IV456')
 message = obj.encrypt('Hello CTF!')
 ```
-```
-requests:
-```
+
+**requests:**
 - Make web requests.
 Example:
 ```python
@@ -84,6 +82,7 @@ import requests
 response = requests.get('http://ctf.example.com/challenge')
 print(response.text)
 ```
+
 ### Tips for Python in CTF:
 
 - Familiarize yourself with Python's built-in functions.
