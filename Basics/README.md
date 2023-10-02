@@ -63,7 +63,7 @@ Python is often the go-to language for CTF enthusiasts due to its simplicity and
 - Crafting exploits
 - Working with binaries
 - Networking tasks
-- 
+
 Example:
 ```python
 from pwn import *
