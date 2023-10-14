@@ -233,7 +233,7 @@ Other useful filters are:
 ```tshark -r filename.pcap -Y 'http.request.method == POST' # Looking for any http POST traffic, sometimes useful if passwords are included in plaintext forms```
 ```tshark -r filename.pcap -Y 'tcp contains "PASS"' # Searching for any tcp traffic that might include passwords in plain text```
 
-#Disk Image Analysis
+# Disk Image Analysis
 Disk image analysis is the examination of a storage device, such as a hard drive, or a solid state drive. These images do not only contain user data, but also system files, unallocated space, and so on. 
 
 Disk image analysis is crucial for forensics, as they could be used for many reasons, such as the following: 
