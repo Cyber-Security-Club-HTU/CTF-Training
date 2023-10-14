@@ -262,7 +262,7 @@ In order to know what the file we are dealing with is, we can use the 'file' com
 
 
 >dds1-alpine.flag.img: DOS/MBR boot sector; partition 1 : ID=0x83, active, start-CHS (0x0,32,33), end-CHS (0x10,81,1), startsector 2048, 260096 sectors 
-![[1.png]]
+![1.png](./files/Disk_Image_Analysis/1.png)
 
 This is description of a boot sector and partition information for a storage device or disk image. Let's break down what each part of this description means: 
 1. dds1-alpine.flag.img: This is likely the filename of the disk image or storage device in question.
@@ -280,7 +280,7 @@ After executing the command **'strings dds1-alpine.flag.img'**, we get a lot of 
 
 After executing this command: strings dds1-alpine.flag.img | grep 'pico' We get the following output: 
 
-![[2.png]]
+![2.png](./files/Disk_Image_Analysis/2.png)
 
 Finally, we've found our flag, which is **picoCTF{f0r3ns1c4t0r_n30phyt3_a69a712c}.** 
 
@@ -292,7 +292,7 @@ We will start by unzipping the gzip, using the same command used above,
 After that, we will use the mmls command, it is done to analyze the disk image file, and list the partitions found in it. We will run the following command: 
 >mmls dds2-alpine.flag.img 
 
-![[3.png]]
+![3.png](./files/Disk_Image_Analysis/3.png)
 
 To breakdown the output, there are two partitions on the disk image: 
 1. Partition 001: This is a Linux partition that starts at sector 2048 and ends at sector 26,2143. 
@@ -311,15 +311,14 @@ Breaking down the command:
  
 After running it, we get the following output: 
 
-![[4.png]]
+![4.png](./files/Disk_Image_Analysis/4.png)
 
 The number represents the **inode number** of the directory. An inode is a data structure in Unix-like file systems that stores metadata about files and directories, such as permissions, timestamps, and pointers to the data blocks.
 
 Since we’ve found the root file, at inode number 18290, we will run the same command, to dive deeper into it: 
 >fls -o 2048 dds2-alpine.flag.img 18290 
 
-![[5.png]]
-
+![5.png](./files/Disk_Image_Analysis/5.png)
 
 This tells us that at 18291, we will find the text file that the challenge is asking is to read from. 
 We will now have to use icat, in order to read this text file, we will use this command
@@ -332,7 +331,8 @@ Let’s breakdown this command:
 - **18291**: This is the inode number of the file you want to extract. Inodes are data structures in Unix-like file systems that store metadata about files, including their data block pointers and other attributes. 
 
 After executing the command, we will get the following output:
-![[6.png]]
+
+![6.png](./files/Disk_Image_Analysis/6.png)
 
 We have found the flag!
 
