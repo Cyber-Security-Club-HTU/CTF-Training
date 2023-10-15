@@ -1,13 +1,13 @@
 # Welcome To Reverse Engineering Section
 
-*Reverse Engineering is one of the most interesting fields in cybersecurity and ethical hacking.*
+**Reverse Engineering is one of the most interesting fields in cybersecurity and ethical hacking.**
 
-*Through this training we’ll be focussing on simple ELF Linux executables for now, but feel free to discover windows exe executables and bytecode for JVM etc...*
-*So let’s get started!*
+Through this training we’ll be focussing on simple ELF Linux executables for now, but feel free to discover windows exe executables and bytecode for JVM etc...
+So let’s get started!
 
 ## What is Reverse Engineering?
 
-In simple terms Reverse Engineering refers to the process of deconstructing any engineered object to figure out the internal mechanisms.
+**In simple terms Reverse Engineering refers to the process of deconstructing any engineered object to figure out the internal mechanisms.**
 
 One example would be cracking games where crackers have to reverse engineer the game code on their PC in order to be able to distribute it for free.
 
@@ -24,7 +24,7 @@ We will however look at only Linux executables generated from C/C++ code in this
 
 ## Introduction to x86 Assembly
 
-x86 Assembly is the assembly instruction code used by the non ARM (Intel/AMD) processors and most CTF problems will use this instruction code. 
+**x86 Assembly is the assembly instruction code used by the non ARM (Intel/AMD) processors and most CTF problems will use this instruction code.**
 
 The instructions generated may vary from OS to OS and we will consider linux executables (ELF format). 
 
@@ -40,8 +40,9 @@ We will first go through these registers and their naming conventions.
 
 ### Registers
 
-A register can be thought of as a special memory location in the CPU. 
-There are 6 general purpose registers and 2 special registers available. 
+**A register can be thought of as a special memory location in the CPU.**
+
+**There are 6 general purpose registers and 2 special registers available.**
 
 We can do all possible assembly operations on these registers like adding values, subtracting etc.
 
@@ -81,7 +82,7 @@ We will mostly be needing the zero flag in reverse engineering since this flag i
 
 `mov operation`
 
-The mov operation is one of the simplest operations and all it does is moves values (or assigns values). 
+**The mov operation is one of the simplest operations and all it does is moves values (or assigns values).**
 
 The syntax of mov is the following:
 
@@ -97,17 +98,17 @@ mov eax, 12
 
 One more thing to understand is dereferencing. This is similar to C. Suppose the register ECX holds the value 0x6665f which is a memory location. 
 
-ECX is therfore similar to a pointer. If I want to load the value stored at 0x6665f into EAX I will use the following command:
+**ECX is therfore similar to a pointer. If I want to load the value stored at 0x6665f into EAX I will use the following command:**
 
 ```assembly
 mov eax, [ecx]
 ```
 
-The brackets [] functions similar to * in C/C++ and it dereferences the memory location and outputs the value at that location.
+**The brackets [] functions similar to * in C/C++ and it dereferences the memory location and outputs the value at that location.**
 
 `add operation`
 
-This is pretty simple. Consider the following assembly code:
+**This is pretty simple. Consider the following assembly code:**
 
 ```assembly
 add eax, ebx
@@ -121,7 +122,7 @@ eax = eax + ebx
 
 `sub operation`
 
-This is similar as well. Consider the following assembly code:
+**This is similar as well. Consider the following assembly code:**
 
 ```assembly
 sub eax, ebx
@@ -135,16 +136,16 @@ eax = eax - ebx
 
 `cmp operation`
 
-This is a very useful operation and is used for comparing values. 
+**This is a very useful operation and is used for comparing values. **
 
-The result of this operation can be combined with jump operations to dictate control flow. Consider the following code:
+**The result of this operation can be combined with jump operations to dictate control flow. Consider the following code:**
 
 ```assembly
 cmp ecx, 15h
 jz 0x7eb
 ```
 
-Let’s see what this does. The cmp command compares the values given to it, in this case it is the value stored in ecx and the value 21 given as hexadecimal. 
+**Let’s see what this does. The cmp command compares the values given to it, in this case it is the value stored in ecx and the value 21 given as hexadecimal.**
 
 cmp essentially subtracts these two values and sets some FLAGS which we talked about before. Here if both the values are equal then the subtraction will be 0 and so the ZERO flag will be set.
 
@@ -160,9 +161,9 @@ Instead of using jz if we used jle the jump would have happened if ecx <= 15h wa
 
 `test operation`
 
-This is similar to cmp except it computes the binary AND instead of subtracting. Thus if the binary AND of the two inputs given is 0 then the zero flag is set.
+**This is similar to cmp except it computes the binary AND instead of subtracting. Thus if the binary AND of the two inputs given is 0 then the zero flag is set.**
 
-The following C conditional can thus be easily translated into assembly:
+**The following C conditional can thus be easily translated into assembly:**
 
 ```c
 if (eax == 0){
@@ -170,7 +171,7 @@ if (eax == 0){
 }
 ```
 
-The corresponding assembly will be:
+**The corresponding assembly will be:**
 
 ```assembly
 test eax, eax
@@ -179,12 +180,12 @@ jz location_to_do_stuff
 
 `lea operation`
 
-This is the final operation that we will see here. This is similar to mov but instead of copying the value it copies the address.
+**This is the final operation that we will see here. This is similar to mov but instead of copying the value it copies the address.**
 
 ```assembly
 lea eax, [ecx]
 ```
 
-The above code will copy the value stored in ecx (that is, the address) into eax. Observe that mov would have copied the value stored in the address stored in ecx. 
+**The above code will copy the value stored in ecx (that is, the address) into eax. Observe that mov would have copied the value stored in the address stored in ecx.** 
 
-Thus lea loads the address instead of the value. It stands for load effective address.
+Thus lea loads the address instead of the value. It stands for **load effective address**.
