@@ -63,3 +63,119 @@ Similarly if you want only 16 bits you will call them as AX, BX, CX.. and so on.
 The following diagram explains this better:
 ```
 ![image](https://github.com/Cyber-Security-Club-HTU/CTF-Training/assets/75253629/bfab3919-3404-4cbb-bf55-943b16bcddf6)
+
+One more important thing to note is that ESP and EBP are used to store the memory location of the stack. 
+ESP points to the top of the stack and EBP (generally) refers to the bottom.
+
+Declaring variables on the stack would therefore be equivalent to adding and subtracting values from ESP and EBP. 
+
+```
+Note that you generally don’t need to know the exact specifics but having a vague idea works.
+```
+There are also a couple of FLAGS that are used by assembly. Think of a flag as a specific boolean variable which is set by assembly instructions. 
+
+Some flags are the zero flag, the sign flag etc. 
+We will mostly be needing the zero flag in reverse engineering since this flag is used many times to determine control flow.
+
+### Basic Assembly Operations
+
+`mov operation`
+The mov operation is one of the simplest operations and all it does is moves values (or assigns values). 
+
+The syntax of mov is the following:
+
+```assembly
+mov destination, source
+```
+
+Suppose I want to set the value 12 in EAX then I would run the operation:
+
+```assembly
+mov eax, 12
+```
+
+One more thing to understand is dereferencing. This is similar to C. Suppose the register ECX holds the value 0x6665f which is a memory location. 
+
+ECX is therfore similar to a pointer. If I want to load the value stored at 0x6665f into EAX I will use the following command:
+
+```assembly
+mov eax, [ecx]
+```
+The brackets [] functions similar to * in C/C++ and it dereferences the memory location and outputs the value at that location.
+
+`add operation`
+This is pretty simple. Consider the following assembly code:
+
+```assembly
+add eax, ebx
+```
+
+This is equivalent to:
+
+```assembly
+eax = eax + ebx
+```
+
+`sub operation`
+This is similar as well. Consider the following assembly code:
+
+```assembly
+sub eax, ebx
+```
+
+This is equivalent to:
+
+```assembly
+eax = eax - ebx
+```
+
+`cmp operation`
+This is a very useful operation and is used for comparing values. 
+
+The result of this operation can be combined with jump operations to dictate control flow. Consider the following code:
+
+```assembly
+cmp ecx, 15h
+jz 0x7eb
+```
+Let’s see what this does. The cmp command compares the values given to it, in this case it is the value stored in ecx and the value 21 given as hexadecimal. 
+
+cmp essentially subtracts these two values and sets some FLAGS which we talked about before. Here if both the values are equal then the subtraction will be 0 and so the ZERO flag will be set.
+
+The next instruction jz stands for “jump if zero”. 
+
+Thus if the zero flag is set the program jumps to the code location charactersised by 0x7eb address (this is easily seen by using a debugger). 
+
+Thus this is similar to an “if” statement.
+
+Turns out we can use such commands clever to construct for, while and other loops. We will go through this in the next article. 
+
+Instead of using jz if we used jle the jump would have happened if ecx <= 15h was satisfied. Indeed a variety of such conditionals can be used to simulate control flow.
+
+`test operation`
+This is similar to cmp except it computes the binary AND instead of subtracting. Thus if the binary AND of the two inputs given is 0 then the zero flag is set.
+
+The following C conditional can thus be easily translated into assembly:
+
+```c
+if (eax == 0){
+	// do stuff
+}
+```
+
+The corresponding assembly will be:
+
+```assembly
+test eax, eax
+jz location_to_do_stuff
+```
+
+`lea operation`
+This is the final operation that we will see here. This is similar to mov but instead of copying the value it copies the address.
+
+```assembly
+lea eax, [ecx]
+```
+The above code will copy the value stored in ecx (that is, the address) into eax. Observe that mov would have copied the value stored in the address stored in ecx. 
+
+Thus lea loads the address instead of the value. It stands for load effective address.
