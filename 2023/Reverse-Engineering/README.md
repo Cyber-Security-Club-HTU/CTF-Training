@@ -136,7 +136,7 @@ eax = eax - ebx
 
 `cmp operation`
 
-**This is a very useful operation and is used for comparing values. **
+**This is a very useful operation and is used for comparing values.**
 
 **The result of this operation can be combined with jump operations to dictate control flow. Consider the following code:**
 
