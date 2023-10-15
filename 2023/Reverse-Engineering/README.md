@@ -4,6 +4,7 @@
 - **We’ll be focussing on simple ELF Linux executables for now, but feel free to discover reverse engineering windows exe executables and bytecode for JVM etc. So let’s get started!**
 
 ## What is Reverse Engineering?
+
 ```
 In simple terms Reverse Engineering refers to the process of deconstructing any engineered object to figure out the internal mechanisms.
 
