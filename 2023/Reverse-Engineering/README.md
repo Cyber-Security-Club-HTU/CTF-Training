@@ -1,9 +1,9 @@
 # Welcome To Reverse Engineering Section
 
-**Reverse Engineering is one of the most interesting fields in cybersecurity and ethical hacking.** 
+*Reverse Engineering is one of the most interesting fields in cybersecurity and ethical hacking.*
 
-**Through this training we’ll be focussing on simple ELF Linux executables for now, but feel free to discover windows exe executables and bytecode for JVM etc...**
-**So let’s get started!**
+*Through this training we’ll be focussing on simple ELF Linux executables for now, but feel free to discover windows exe executables and bytecode for JVM etc...*
+*So let’s get started!*
 
 ## What is Reverse Engineering?
 
