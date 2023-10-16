@@ -2,6 +2,16 @@
 
 Welcome to the ColdRoot CTF challenges. Unravel the mysteries set forth by the notorious Russian APT group, ColdRoot.
 
+```
+To get started:
+```
+
+- wget the binary to your machine:
+
+```bash
+wget
+```
+
 ---
 
 ## Challenge 1: ColdRoot
