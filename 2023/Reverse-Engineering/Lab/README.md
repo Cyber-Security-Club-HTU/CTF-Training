@@ -38,6 +38,10 @@ The path ahead requires a trio of colors. Look to the north, where winters are l
 
 ### Tools Suggested
 - `gdb`
+- `file`
+- `strings`
+- `strace`
+- `ltrace`
 - `ghidra`
 - `objdump`
 - `radare2`
