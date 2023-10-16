@@ -21,6 +21,7 @@ Analyze the provided binary to uncover hidden secrets.
 - `ltrace`
 - `objdump`
 - `readelf`
+- `ghidra`
 
 ---
 
@@ -37,6 +38,9 @@ The path ahead requires a trio of colors. Look to the north, where winters are l
 
 ### Tools Suggested
 - `gdb`
+- `ghidra`
+- `objdump`
+- `radare2`
 
 ---
 
