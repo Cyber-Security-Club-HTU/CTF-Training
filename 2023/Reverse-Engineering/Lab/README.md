@@ -2,8 +2,6 @@
 
 Welcome to the ColdRoot CTF challenges. Dive deep into the intricate world of ColdRoot, a fictional Russian APT group, and uncover their hidden secrets.
 
----
-
 ## Challenge 1: Frozen Byte
 
 ### Scenario
