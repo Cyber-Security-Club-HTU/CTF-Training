@@ -190,7 +190,9 @@ lea eax, [ecx]
 
 Thus lea loads the address instead of the value. It stands for **load effective address**.
 
+## What's Next?
+
 ```
-Now, because we wanna get work done and achieve the flag in CTFs:
+Now, because we wanna get work done and obtain the flag of the challenge in CTFs:
 ```
 We will jump into [tools section](https://github.com/Cyber-Security-Club-HTU/CTF-Training/tree/main/2023/Reverse-Engineering/Tools) and how to get the flag with several ways and scenarios that we are capable of doing with these tools.
