@@ -5,7 +5,7 @@ Welcome to the ColdRoot CTF challenges. Unravel the mysteries set forth by the n
 - To get started, wget the binary to your machine:
 
 ```bash
-wget
+wget https://github.com/Cyber-Security-Club-HTU/CTF-Training/blob/main/2023/Reverse-Engineering/Lab/coldroot.bin
 ```
 
 ---
