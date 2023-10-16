@@ -42,6 +42,5 @@ The path ahead requires a trio of colors. Look to the north, where winters are l
 - `objdump`
 - `radare2`
 
----
 
-Good luck to all participants and may the best hacker win!
+***Good luck to all participants and may the best hacker win!***
