@@ -1,22 +1,26 @@
 # ColdRoot CTF Challenges
 
-Welcome to the ColdRoot CTF challenges. Dive deep into the world of ColdRoot, a Russian APT group, and uncover their hidden secrets.
+Welcome to the ColdRoot CTF challenges. Unravel the mysteries set forth by the notorious Russian APT group, ColdRoot.
+
+---
 
 ## Challenge 1: ColdRoot
 
 ### Scenario
-A large multinational corporation recently suffered a data breach. Initial findings suggest that the breach was orchestrated by a Russian APT group, "ColdRoot". 
-
-A suspicious binary was found on one of the compromised systems. Analysis of this binary may yield clues about the group's intentions and perhaps reveal some of their hidden infrastructure.
+A large multinational corporation recently fell victim to a data breach. Initial forensics point towards the involvement of a Russian APT group named "ColdRoot". A dubious binary found on a compromised system is your starting point. 
 
 ### Objective
-Analyze the provided binary to uncover hidden secrets.
+Dissect the provided binary to extract hidden messages.
 
-### Hints
-- Sometimes, it's not about gaining access but understanding the process.
-- Strings might help, but remember, they can be deceiving.
+### Hint
+<details>
+  <summary>Click to reveal hint</summary>
+  
+  - Sometimes, it's not about gaining access but understanding the process.
+  - Strings can be useful, but they might also deceive.
+</details>
 
-### Tools Suggested
+### Suggested Tools
 - `file`
 - `strings`
 - `strace`
@@ -30,15 +34,19 @@ Analyze the provided binary to uncover hidden secrets.
 ## Challenge 2: Bear1337
 
 ### Scenario
-After navigating the ColdRoot Systems, you stumble upon another binary. This one seems to contain encrypted data. Initial static analysis shows there are color-based references in the binary. Further investigation is needed to uncover its secrets.
+Navigating deeper into ColdRoot's systems, you've encountered another binary, which appears to be concealing encrypted information. There's a mention of colors, but what could they mean?
 
 ### Objective
-Decrypt the hidden message within the binary using dynamic analysis.
+Use dynamic analysis to decrypt the secret message within the binary.
 
 ### Hint
-The path ahead requires a trio of colors. Look to the north, where winters are long, and tales are told of bear and babushka.
+<details>
+  <summary>Click to reveal hint</summary>
+  
+  The path ahead requires a trio of colors. Look to the north, where winters are fierce, and tales of bears and babushkas are abundant.
+</details>
 
-### Tools Suggested
+### Suggested Tools
 - `gdb`
 - `file`
 - `strings`
@@ -50,4 +58,4 @@ The path ahead requires a trio of colors. Look to the north, where winters are l
 
 ---
 
-***Good luck!***
+**Good luck, and may the odds be in your favor!**
