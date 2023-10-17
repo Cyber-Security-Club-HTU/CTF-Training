@@ -37,11 +37,18 @@ Here are some of the fundamental tools categories that can help you:
 
 **It won't cover EXE (Windows) or JVM-based binaries. It's highly recommended to use a Linux distribution such as Kali for these tasks.**
 
+**To read the tools manual:**
+
+```bash
+man <tool-name>
+```
+
 **If you find that any tool is missing, you can easily install it using:**
 
 ```bash
 sudo apt install <tool-name>
 ```
+
 
 ### Now, let's delve into some of the fundamental tools:
 
