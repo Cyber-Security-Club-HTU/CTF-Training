@@ -1,5 +1,5 @@
 <div align="center">
-<img src="https://hex-rays.com/wp-content/themes/hx2021/dist/img/how-it-works.png">
+<img src="https://media.defense.gov/2019/Apr/04/2002109557/-1/-1/0/190404-D-IM742-1002.PNG">
 </div>
 
 # Reverse Engineering Tools
