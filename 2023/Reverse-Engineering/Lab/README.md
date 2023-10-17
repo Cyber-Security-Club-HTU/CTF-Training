@@ -1,4 +1,8 @@
-# ColdRoot CTF Challenges
+<div align="center">
+<img src="https://png.pngtree.com/png-vector/20220720/ourmid/pngtree-russian-bear-tireman-shield-mascot-head-identity-sporting-vector-png-image_32798422.png">
+</div>
+
+# ColdRoot CTF Challenge
 
 Welcome to the ColdRoot CTF challenges. Unravel the mysteries set forth by the notorious Russian APT group, ColdRoot.
 
@@ -10,7 +14,7 @@ wget https://github.com/Cyber-Security-Club-HTU/CTF-Training/blob/main/2023/Reve
 
 ---
 
-## Challenge 1: ColdRoot
+## Challenge 1 Part 1: ColdRoot
 
 ### Scenario
 A large multinational corporation recently fell victim to a data breach. Initial forensics point towards the involvement of a Russian APT group named "ColdRoot". 
@@ -39,7 +43,7 @@ Dissect the provided binary to extract hidden messages.
 
 ---
 
-## Challenge 2: Bear1337
+## Challenge 1 Part 2: Bear1337
 
 ### Scenario
 
