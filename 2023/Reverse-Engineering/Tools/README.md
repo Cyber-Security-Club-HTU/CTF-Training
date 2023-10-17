@@ -45,46 +45,57 @@ sudo apt install <tool-name>
 
 **Now, let's delve into some of the fundamental tools:**
 
-## 1. Strings
+### 1. Strings
 The 'strings' command extracts readable character sequences from binary files. It's a quick way to find hints or potential flags.
 Usage:
 \`\`\`
 strings <binary-name>
 \`\`\`
 
-## 2. ltrace
+### 2. ltrace
+
 'ltrace' intercepts and records dynamic library calls made by a binary and the signals received by it. 
+
 Usage:
 \`\`\`
 ltrace ./<binary-name>
 \`\`\`
 
-## 3. strace
+### 3. strace
+
 'strace' traces system calls and signals. It's useful for understanding the interactions of a binary with the operating system.
+
 Usage:
 \`\`\`
 strace ./<binary-name>
 \`\`\`
 
-## 4. readelf
+### 4. readelf
+
 'readelf' displays information about ELF files, including headers, sections, and symbols.
+
 Usage:
 \`\`\`
 readelf -a <binary-name>
 \`\`\`
 
-## 5. gdb
+### 5. gdb
+
 The GNU Debugger (GDB) is a powerful debugger for ELF binaries. It allows you to inspect, run, and modify running programs.
 Usage:
+
 \`\`\`
 gdb ./<binary-name>
 \`\`\`
 
-## 6. Ghidra
+### 6. Ghidra
+
 Ghidra is both a disassembler and a decompiler. While not run directly from the command line like the other tools, Ghidra provides an extensive GUI for analyzing binaries in-depth.
 
-## 7. objdump
+### 7. objdump
+
 'objdump' provides a variety of information about object files, including their structure, symbols, and assembly code.
+
 Usage:
 \`\`\`
 objdump -D <binary-name>
