@@ -1,5 +1,5 @@
 <div align="center">
-<img src="https://upload.wikimedia.org/wikipedia/commons/a/a3/Ghidra_Logo.png">
+<img src="https://hex-rays.com/wp-content/themes/hx2021/dist/img/how-it-works.png">
 </div>
 
 # Reverse Engineering Tools
