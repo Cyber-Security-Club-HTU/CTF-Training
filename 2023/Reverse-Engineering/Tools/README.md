@@ -26,7 +26,7 @@ Here are some of the fundamental tools categories that can help you:
 - **Disassemblers:** These break down binary files (executables) into assembly code, making it readable and easier to understand. Examples include IDA Pro and Ghidra.
 - **Debuggers:** They allow you to pause, inspect, and manipulate a running program, essential for understanding how software works and for identifying vulnerabilities. Popular choices are GDB and OllyDbg.
 - **Hex Editors:** These are used to view and modify the binary data of a file directly. Tools like HxD or Hex Fiend come in handy.
-- **String Extractors:** Often, binaries contain readable strings that can provide hints or even direct answers. The 'strings' command on Linux is a simple yet effective tool for this.
+- **String Extractors:** Often, binaries contain readable strings that can provide hints or even direct answers. The `strings` command on Linux is a simple yet effective tool for this.
 - **Decompilers:** These attempt to translate binary files back into high-level source code. Ghidra and IDA Pro come with decompiler functionalities.
 - **Dynamic Analysis Tools:** Tools like strace and ltrace on Linux can trace system calls made by a program, which can be instrumental in understanding its behavior.
 - **Scripting and Automation:** Sometimes, repetitive tasks can be automated using scripting languages like Python. Tools like pwntools can aid in this.
@@ -43,7 +43,7 @@ Here are some of the fundamental tools categories that can help you:
 sudo apt install <tool-name>
 ```
 
-## Now, let's delve into some of the fundamental tools:
+### Now, let's delve into some of the fundamental tools:
 
 ### 1. Strings
 The `strings` command extracts readable character sequences from binary files. It's a quick way to find hints or potential flags.
