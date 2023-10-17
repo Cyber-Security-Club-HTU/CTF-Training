@@ -1,6 +1,7 @@
 <div align="center">
-	<img src="https://llvm.org/img/DragonFull.png">
+	<img src="https://llvm.org/img/LLVMWyvernSmall.png">
 </div>
+
 # Welcome To Reverse Engineering Section
 
 **Reverse Engineering is one of the most interesting fields in cybersecurity and ethical hacking.**
