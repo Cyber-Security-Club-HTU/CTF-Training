@@ -11,8 +11,7 @@ At its core, reverse engineering is the process of understanding and dissecting 
 **In the context of CTFs, your primary goal is often to retrieve a hidden message or "flag" embedded within software or to understand how a program functions to exploit it.**
 
 ```
-Most of the time your aim is to get a flag,
-but some challenges gives you a link or a clue
+Most of the time your aim is to get a flag, but some challenges gives you a link or a clue
 for another challenge (which is a completion of the first challenge) that will have the flag.
 ```
 
