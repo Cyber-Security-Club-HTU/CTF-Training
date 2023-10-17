@@ -49,7 +49,7 @@ man <tool-name>
 sudo apt install <tool-name>
 ```
 
-When you first encounter a binary during a CTF or any reverse engineering task, there are a few immediate steps you should take to get a better sense of what you're dealing with.
+### When you first encounter a binary during a CTF or any reverse engineering task, there are a few immediate steps you should take to get a better sense of what you're dealing with.
 
 ### 1. Identify the Binary Type
 
