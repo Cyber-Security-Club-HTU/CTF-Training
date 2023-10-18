@@ -1,5 +1,5 @@
 <div align="center">
-<img src=" https://static-00.iconduck.com/assets.00/gdb-icon-512x317-pq30y6m3.png">
+<img src="https://upload.wikimedia.org/wikipedia/commons/a/a3/Ghidra_Logo.png">
 </div>
 
 # Reverse Engineering Tools
