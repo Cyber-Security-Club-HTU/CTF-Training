@@ -300,6 +300,13 @@ x/<format> <address>
 
 Replace `<format>` with your desired output format (e.g., `x` for hexadecimal, `s` for string) and `<address>` with the memory address you're interested in.
 
+#### C. Viewing Functions
+
+To view functions used in binary:
+```
+info functions
+```
+
 ### 16. Dealing with Functions in Stripped Binaries
 
 While function names are stripped, the function's code remains intact. You can identify function boundaries and behavior patterns by analyzing loops, calls, and jumps.
