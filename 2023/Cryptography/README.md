@@ -11,25 +11,25 @@ This repository contains some practical essential fundamental concepts to know w
 
 ## Content
 
-[1] **Data representations and essential functions in Python:** <br>
-	- Data Types.<br>
-	- Conversions in Python.<br>
-	- Common functions and forms.<br>
+1. **Data representations and essential functions in Python**
+	- Data Types.
+	- Conversions in Python.
+	- Common functions and forms.
 
-[2] **Known public ciphers:** <br>
-	- Caesar Cipher.<br>
-	- Rot 13.<br>
-	- Base64 encoding.<br>
+2. **Known public ciphers**
+	- Caesar Cipher.
+	- Rot 13
+	- Base 64 (encoding)
 
-[3] **Bitwise Operations:** <br>
-	- `xor` logical operator.<br>
-	- Right shifting (`>>`).<br>
-	- Left Shifting (`<<`).<br>
+3. **Bitwise Operations.**
+	- `xor` logical operator.
+	- Right shifting (`>>`).
+	- Left Shifting (`<<`).
 
-[4] **RSA**<br>
-	- Normal case.<br>
-	- Weak exponent attack.<br>
+4. **RSA**
+	- Normal case.
+	- Weak exponent attack.
 
-[5] **AES:**<br>
-	- ECB mode<br>
-	- CBC mode.<br>
+5. **AES**
+	- ECB mode
+	- CBC mode.
