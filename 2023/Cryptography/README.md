@@ -8,28 +8,28 @@
 
 This repository contains some practical essential fundamental concepts to know when doing cryptography challenges in CTF competitions. Cryptography is a standalone science, so it is impossible to conclude everything in couple of lessons. So, we tried to cover as much important topics as possible to build a solid foundation, that enables you to continue the journey yourself and explore it more.
 
----
-### Content
 
-[1] **Data representations and essential functions in Python**
-	- Data Types.
-	- Conversions in Python.
-	- Common functions and forms.
+## Content
 
-[2] **Known public ciphers**
-	- Caesar Cipher.
-	- Rot 13
-	- Base 64 (encoding)
+[1] **Data representations and essential functions in Python:** <br>
+	- Data Types.<br>
+	- Conversions in Python.<br>
+	- Common functions and forms.<br>
 
-[3] **Bitwise Operations.**
-	- ` xor ` logical operator.
-	- Right shifting (`>>`).
-	- Left Shifting (`<<`).
+[2] **Known public ciphers:** <br>
+	- Caesar Cipher.<br>
+	- Rot 13.<br>
+	- Base64 encoding.<br>
 
-[4] **RSA**
-	- Normal case.
-	- Weak exponent attack.
+[3] **Bitwise Operations:** <br>
+	- `xor` logical operator.<br>
+	- Right shifting (`>>`).<br>
+	- Left Shifting (`<<`).<br>
 
-[5] **AES**
-	- ECB mode
-	- CBC mode.
+[4] **RSA**<br>
+	- Normal case.<br>
+	- Weak exponent attack.<br>
+
+[5] **AES:**<br>
+	- ECB mode<br>
+	- CBC mode.<br>
