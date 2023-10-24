@@ -250,7 +250,8 @@ Disk image analysis is crucial for forensics, as they could be used for many rea
 	> apt install sleuthkit 
 4.  **fls**: Fls is a command from the sleuthkit library, it lists the files and directory names in the image and can display file names of recently deleted files for the directory 
 5. **mmls**: mmls is also a command from the sleuthkit library, mmls stands for "media management list structures," and it is used for listing and examining partition information on storage media, such as hard drives, disk images, and other storage devices. This tool is particularly helpful for forensic investigators and analysts when they need to understand the layout of partitions on a storage device. 
-6. **icat**: (inode cat) - Output the contents of a file based on its inode number. 
+6. **icat**: (inode cat) - Output the contents of a file based on its inode number.
+7. FTK Imager: A forensic software tool used for creating and analyzing disk images in digital forensics. It allows investigators to make exact copies of storage devices, preserving the original data, and then analyze these copies for evidence. This helps ensure data integrity and assists in investigating crimes involving digital evidence.
 
 >**Disk, disk, sleuth!** 
 
@@ -335,5 +336,48 @@ After executing the command, we will get the following output:
 ![6.png](./files/Disk_Image_Analysis/6.png)
 
 We have found the flag!
+
+**Operation Oni**
+We are going to launch the application called "FTK Imager". First of all, we start by downloading the disk image. After downloading it, we unzip it, and click on "File" "Add Evidence Item" As shown here:
+![[7.png]]
+After this, we click on "Image File" as shown here:
+![[8.png]]
+We then choose the image file, and click on "Finish", as we can see, we now have full access to the disk image files, and we can browse all of them. The challenge has asked us to search for a ssh file in order to log in remotely using it.
+![[9.png]]
+From these 2 partitions, we can start searching by pressing the "+" icon, and browsing through the directories.
+
+>After browsing, I have found the ssh file at Partition 2 -> NONAME -> root -> root -> .ssh
+![[10.png]]
+
+We can now export the file, by right clicking on it, pressing "Export File", then choosing a destination.
+
+After this, we can open Windows Powershell or CMD, in order to complete the challenge, and connect using SSH. We are going to use the following command, which was provided by picoctf:
+>`ssh -i id_ed25519 -p 64368 ctf-player@saturn.picoctf.net`
+
+We then after connecting, will use "ls" to list the directories and available files.
+![[Pasted image 20231024204358.png]]
+We will now use cat, to preview the flag.txt file.
+![[12.png]]
+We have found our flag! **"picoCTF{k3y_5l3u7h_af277f77}"**
+
+
+**Root-me Challenge: Deleted Files**
+
+This challenge starts with giving us a .tar file, which when decompressed, gives us a file called "usb.image".
+
+We are going to follow the same steps, open the "FTK Imager" file, "Add Evidence File", then choosing the given file. After completing these steps, we have the following:
+![[13.png]]
+
+After clicking on "Root", we can see a file called "anonyme.png", as follows:
+![[14.png]]
+
+In order to view the file in text format, we click on the "Text" icon, which is shown here:
+
+![[15.png]]
+
+We then, can see the following:
+![[16.png]]
+
+We have solved the challenge, the answer is javier_turcot.
 
 ... 
