@@ -159,7 +159,7 @@ Thus if the zero flag is set the program jumps to the code location charactersis
 
 Thus this is similar to an “if” statement.
 
-Turns out we can use such commands clever to construct for, while and other loops.
+Turns out we can use such commands clever to construct for, while and other loops. We will go through this in the next article. 
 
 Instead of using jz if we used jle the jump would have happened if ecx <= 15h was satisfied. Indeed a variety of such conditionals can be used to simulate control flow.
 
