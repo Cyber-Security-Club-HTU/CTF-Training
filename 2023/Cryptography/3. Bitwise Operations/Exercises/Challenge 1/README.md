@@ -3,8 +3,8 @@
 ```Python
 from pwn import xor
 
-flag = bytes.fromhex("*********************")
-key1 = bytes.fromhex("37dcb292030faa90d07eec17e3b1")
+flag = b"*********************"
+key = bytes.fromhex("37dcb292030faa90d07eec17e3b1")
 
-xor(flag, key1) # 4854557b6778ecd6cd6940c8cfa436a94586cc
+bytes.hex(xor(flag, key))  # 7f88e7e9743cc6a18f1aa379d0ee43b481c04672
 ```
