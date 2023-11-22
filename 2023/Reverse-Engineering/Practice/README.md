@@ -10,5 +10,7 @@ These files are taken from [TryHackMe](https://tryhackme.com) Official website, 
 
 **If you want to download the challenge files now, you can run this command on your terminal:**
 ```bash
-wget
+wget https://github.com/Cyber-Security-Club-HTU/CTF-Training/blob/main/2023/Reverse-Engineering/Practice/crackme1
 ```
+
+**NOTE: This will get you the "crackme1" file, if you want other ones you can change the last path to crackme2,3,4,5 etc...**
