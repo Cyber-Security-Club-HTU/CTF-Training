@@ -2,6 +2,6 @@
 
 ## Practice Lab
 
-These files are taken from tryhackme[https://tryhackme.com] Official website, from a challenge called "reversing elf".
-- You can sign up on tryhackme[https://tryhackme.com/signup] and submit flags on the official websites.
-- You can access the room directly from this link: Reversing ELF[https://tryhackme.com/room/reverselfiles]
+These files are taken from [TryHackMe](https://tryhackme.com) Official website, from a challenge called "reversing elf".
+- You can sign up on [TryHackMe](https://tryhackme.com/signup) and submit flags on the official websites.
+- You can access the room directly from this link: [Reversing ELF](https://tryhackme.com/room/reverselfiles)
