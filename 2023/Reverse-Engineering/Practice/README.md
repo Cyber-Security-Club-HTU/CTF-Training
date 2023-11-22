@@ -5,3 +5,10 @@
 These files are taken from [TryHackMe](https://tryhackme.com) Official website, from a challenge called "reversing elf".
 - You can sign up on [TryHackMe](https://tryhackme.com/signup) and submit flags on the official websites.
 - You can access the room directly from this link: [Reversing ELF](https://tryhackme.com/room/reverselfiles)
+
+## Quick Start
+
+**If you want to download the challenge files now, you can run this command on your terminal:**
+```bash
+wget
+```
