@@ -28,7 +28,7 @@ In order to know what the file we are dealing with is, we can use the 'file' com
 
 
 >dds1-alpine.flag.img: DOS/MBR boot sector; partition 1 : ID=0x83, active, start-CHS (0x0,32,33), end-CHS (0x10,81,1), startsector 2048, 260096 sectors 
-![1.png](./files/Disk_Image_Analysis/1.png)
+![1.png](../files/Disk_Image_Analysis/1.png)
 
 This is description of a boot sector and partition information for a storage device or disk image. Let's break down what each part of this description means: 
 1. dds1-alpine.flag.img: This is likely the filename of the disk image or storage device in question.
@@ -46,7 +46,7 @@ After executing the command **'strings dds1-alpine.flag.img'**, we get a lot of 
 
 After executing this command: strings dds1-alpine.flag.img | grep 'pico' We get the following output: 
 
-![2.png](./files/Disk_Image_Analysis/2.png)
+![2.png](../files/Disk_Image_Analysis/2.png)
 
 Finally, we've found our flag, which is **picoCTF{f0r3ns1c4t0r_n30phyt3_a69a712c}.** 
 
@@ -58,7 +58,7 @@ We will start by unzipping the gzip, using the same command used above,
 After that, we will use the mmls command, it is done to analyze the disk image file, and list the partitions found in it. We will run the following command: 
 >mmls dds2-alpine.flag.img 
 
-![3.png](./files/Disk_Image_Analysis/3.png)
+![3.png](../files/Disk_Image_Analysis/3.png)
 
 To breakdown the output, there are two partitions on the disk image: 
 1. Partition 001: This is a Linux partition that starts at sector 2048 and ends at sector 26,2143. 
@@ -77,14 +77,14 @@ Breaking down the command:
  
 After running it, we get the following output: 
 
-![4.png](./files/Disk_Image_Analysis/4.png)
+![4.png](../files/Disk_Image_Analysis/4.png)
 
 The number represents the **inode number** of the directory. An inode is a data structure in Unix-like file systems that stores metadata about files and directories, such as permissions, timestamps, and pointers to the data blocks.
 
 Since we’ve found the root file, at inode number 18290, we will run the same command, to dive deeper into it: 
 >fls -o 2048 dds2-alpine.flag.img 18290 
 
-![5.png](./files/Disk_Image_Analysis/5.png)
+![5.png](../files/Disk_Image_Analysis/5.png)
 
 This tells us that at 18291, we will find the text file that the challenge is asking is to read from. 
 We will now have to use icat, in order to read this text file, we will use this command
@@ -98,21 +98,28 @@ Let’s breakdown this command:
 
 After executing the command, we will get the following output:
 
-![6.png](./files/Disk_Image_Analysis/6.png)
+![6.png](../files/Disk_Image_Analysis/6.png)
 
 We have found the flag!
 
 **Operation Oni**
 We are going to launch the application called "FTK Imager". First of all, we start by downloading the disk image. After downloading it, we unzip it, and click on "File" "Add Evidence Item" As shown here:
-![[7.png]]
+
+![7.png](../files/Disk_Image_Analysis/7.png)
+
 After this, we click on "Image File" as shown here:
-![[8.png]]
+
+![8.png](../files/Disk_Image_Analysis/8.png)
+
 We then choose the image file, and click on "Finish", as we can see, we now have full access to the disk image files, and we can browse all of them. The challenge has asked us to search for a ssh file in order to log in remotely using it.
-![[9.png]]
+
+![9.png](../files/Disk_Image_Analysis/9.png)
+
 From these 2 partitions, we can start searching by pressing the "+" icon, and browsing through the directories.
 
 >After browsing, I have found the ssh file at Partition 2 -> NONAME -> root -> root -> .ssh
-![[10.png]]
+
+![10.png](../files/Disk_Image_Analysis/10.png)
 
 We can now export the file, by right clicking on it, pressing "Export File", then choosing a destination.
 
@@ -120,9 +127,13 @@ After this, we can open Windows Powershell or CMD, in order to complete the chal
 >`ssh -i id_ed25519 -p 64368 ctf-player@saturn.picoctf.net`
 
 We then after connecting, will use "ls" to list the directories and available files.
-![[Pasted image 20231024204358.png]]
+
+![11.png](../files/Disk_Image_Analysis/11.png)
+
 We will now use cat, to preview the flag.txt file.
-![[12.png]]
+
+![12.png](../files/Disk_Image_Analysis/12.png)
+
 We have found our flag! **"picoCTF{k3y_5l3u7h_af277f77}"**
 
 
@@ -131,16 +142,19 @@ We have found our flag! **"picoCTF{k3y_5l3u7h_af277f77}"**
 This challenge starts with giving us a .tar file, which when decompressed, gives us a file called "usb.image".
 
 We are going to follow the same steps, open the "FTK Imager" file, "Add Evidence File", then choosing the given file. After completing these steps, we have the following:
-![[13.png]]
+
+![13.png](../files/Disk_Image_Analysis/13.png)
 
 After clicking on "Root", we can see a file called "anonyme.png", as follows:
-![[14.png]]
+
+![14.png](../files/Disk_Image_Analysis/14.png)
 
 In order to view the file in text format, we click on the "Text" icon, which is shown here:
 
-![[15.png]]
+![15.png](../files/Disk_Image_Analysis/15.png)
 
 We then, can see the following:
-![[16.png]]
+
+![16.png](../files/Disk_Image_Analysis/16.png)
 
 We have solved the challenge, the answer is javier_turcot.
